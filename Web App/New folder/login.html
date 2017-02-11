@@ -1,0 +1,72 @@
+<script src='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-alpha.6/js/bootstrap.min.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js'></script>
+<html>
+<head>
+
+
+    <link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-alpha.6/css/bootstrap.min.css'>
+    <link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css'>
+
+    <link rel="stylesheet" href="css/style.css">
+
+
+</head>
+
+<body>
+
+
+    <title>Animated Log In Frame</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script type="http://jquery.com/download/jquery-3.1.1.min (1).js"></script>
+</body>
+</head>
+<body>
+<br>
+<img src="final_logo.jpg" length="250px" width="400px"><img>
+<section id="form_before_launch">
+    <p>Log In</p>
+    <form id="form" method="post" onsubmit="return false">
+    <div>
+        <div>
+            <input type="text" id="username" placeholder="Username"/>
+        </div>
+        <div><br>
+            <input type="password" id="password" placeholder="Password"/>
+        </div>
+        <div id="btn">
+            <input type="submit" id="submit" value="Log In">
+        </div>
+    </div>
+    </form>
+</section>
+</body>
+<h1>Welcome!!!!!!!!!</h1>
+<script>
+    $(document).ready(function(){
+
+        $("#form_before_launch").click(function(){
+            $(this).animate({height: "250px",width: "400px"});
+            $(this).children("p").animate({fontSize:"25px"});
+            $("#form").delay(500).fadeIn();
+        })
+        $("#submit").click(function(){
+            var u_name = $("#username").val();
+            var pass = $("#password").val();
+            if(u_name != "" && pass != "") {
+                $("#form_before_launch").fadeOut();
+                $("h1").fadeIn();
+                $("h1").html("Welcome "+u_name);
+                $("h1").animate({marginTop: "200px"});
+				
+            }
+			
+        })
+    })
+</script>
+ <body>
+ 
+ <p style="text-align:center; padding: 500px;" class="thick-border"><a href="medical store.html">CLICK HERE FOR REGISTERATION!!!!</a>
+ </p>
+ </body>
+</html>
